@@ -178,7 +178,7 @@ public class Xcon:SocketDelegate{
         
     }
    
-    public static var debugEnable = false
+    public static var debugEnable = true
     static public func socketFromProxy(_ p: SFProxy?,targetHost:String,Port:UInt16,delegate:XconDelegate,queue:DispatchQueue,enableTLS:Bool = false,sessionID:UInt32 = 0) ->Xcon?{
         let sid = sessionID + 3
         
